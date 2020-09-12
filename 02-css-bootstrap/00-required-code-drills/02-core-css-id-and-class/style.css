@@ -16,3 +16,28 @@
   background-color: rgb(233, 56, 25);
   position: relative;
 }
+.box-1 {
+ position: absolute;
+ width: 100px;
+ height: 100px;
+ background-color: coral;
+}
+.box-2 {
+  position: absolute;
+  width:100px;
+  height: 100px;
+  background-color: burlywood;
+}
+.box-3 {
+  position: absolute;
+  width:100px;
+  height: 100px;
+  background-color: peru;
+}
+
+.box-4 {
+  position: absolute;
+  width:100px;
+  height: 100px;
+  background-color: orange;
+}
