@@ -20,8 +20,8 @@
 
 .box-1 {
   position: absolute;
-
-
+  top: 0px;
+  left: 0px;
   height: 100px;
   width: 100px;
   background-color: purple;
@@ -29,8 +29,8 @@
 
 .box-2 {
   position: absolute;
-
-
+  top: 0px;
+  right: 0px;
   height: 100px;
   width: 100px;
   background-color: blue; 
@@ -38,21 +38,23 @@
 
 .box-3 {
   position: absolute;
-
-
+  top: 100%;
+  left: 0px;
   height: 100px;
   width: 100px;
   background-color: yellow;
+  transform: translateY(-100%);
  
 }
 
 .box-4 {
   position: absolute;
-
-
+  top: 100%;
+  right: 0px;
   height: 100px;
   width: 100px;
   background-color: olivedrab;
+  transform: translateY(-100%);
   
   
 }
