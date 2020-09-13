@@ -54,3 +54,15 @@
   background-color: olivedrab;
   transform: translateY(-100%);
 }
+.door {
+  color: rgb(17, 3, 3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.unique{
+  width: 100vw;
+  height: 100vh;
+  background-color: steelblue;
+}
