@@ -15,7 +15,7 @@ ourArray.push("hello");
 ourArray.push(false);
 // push the number 84 into ourArray
 
-ourArray.puah(84);
+ourArray.push(84);
 // push the string "world" into our Array
 ourArray.push("world");
 
@@ -45,24 +45,48 @@ console.log("--------------------------Seperator 2--------------------------");
 // We've declared this array for you
 var numArray = [2, 65, 3, 7, 39, 22, 11, 94, 299, 9, 20, 21, 51, 37];
 // iterate through numArray and create an individual console log for every number greater than 50
-
+for (var i = 0; i < numArray.length; i++) {
+  if (numArray[i] > 50) {
+    console.log(numArray[i]);
+  }
+}
 
 
 // iterate through numArray and create an alert that tells us 
 // the index of all the occurances of the number 11
 
-
+for (var i = 0; i < numArray.length; i++) {
+  if (numArray[i] ===11) {
+    alert("the index of all the occurances of the number 11 are: " + i )
+  }
+}
 
 // iterate through numArray and console log the sum of all the numbers
-
+sum = 0;
+for (var i=0; i <numArray.length; i++){
+  sum = sum + numArray[i];
+}
+console.log(sum);
 
 
 // iterate through numArray and console log the sum of all the numbers greater than 50
-
+sum = 0;
+for (var i=0; i < numArray.length; i++) {
+  if(numArray[i]>50) {
+    sum = sum + numArray[i];
+  }
+}
+console.log(sum);
 
 
 // iterate through numArray and console log the sum of all the even numbers
-
+sum = 0;
+for (var i=0; i < numArray.length; i++) {
+  if((numArray[i]%2) === 0) {
+    sum = sum + numArray[i];
+  }
+}
+console.log(sum);
 
 
 // This seperator is here to make your console logs a little easier to read 
@@ -74,24 +98,50 @@ var fruits = [
   "Apple", "Orange", "Banana", "Pomelo", "Apple", "Kiwi", "Peach", "Banana", "Grape", "Tomato", 
   "Kiwi", "Apple", "Watermelon", "Lemon", "Pomelo", "Apple", "Banana", "Peach", "Apricot", "Grape"];
 // iterate through fruits and console log the number of times "Apple" appears in the array
-
-
+var aCount =0;
+for(var i= 0; i < fruits.length; i++) {
+  if (fruits[i] == "Apple") {
+   
+    aCount++;
+  }
+  
+}
+console.log("The number of apples is: " + aCount);
 
 // iterate through fruits and console log the number of times "Peach" appears in the array
 
-
+var pCount =0;
+for(var i= 0; i < fruits.length; i++) {
+  if (fruits[i] == "Peach") {
+   
+    pCount++;
+  }
+  
+}
+console.log("The number of peaches  is: " + pCount);
 
 // iterate through fruits and console log the number of fruits that start with "P" in the array
 
+var pFruit = 0;
+for (var i = 0; i < fruits.length; i++) {
+  if (fruits[i].charAt(0) === "P") {
+    pFruit++;
+  }
+}
+console.log("The number of p fruits  is: " + pFruit);
 
 
 // create a new empty array named uniqueFruits
 
-
+var uniqueFruits = [];
 // iterate through fruits and populate uniqueFruits with only unique values from fruits
 // you should a shorter array without repeated values
-
-
+for (var i = 0; i < fruits.length; i++) {
+  if (!uniqueFruits.includes(fruits[i])) {
+    uniqueFruits.push(fruits[i]);
+  }
+} 
+console.log(uniqueFruits)
 
 // console log out your uniqueFruits array
 
@@ -114,7 +164,11 @@ var twoDimArray = [
 // another seperator for your convenience
 console.log("     first array      ");
 // iterate through the first array inside twoDimArray and console log all the numbers less than 25
-
+for (var i = 0; i < twoDimArray[0].length; i++){
+  if (twoDimArray[0][i] < 25) {
+    console.log(twoDimArray[0][i]);
+  }
+}
 
 
 // another seperator for your convenience
