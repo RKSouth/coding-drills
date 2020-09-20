@@ -1,41 +1,41 @@
 // declare a variable named ourArray and assign an empty array to it
-
+var ourArray= [];
 
 // we can `push` values into an array with the push method. Documentation can be found here:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 
 // Let's push the number 1 into ourArray
 
-
+ourArray.push(1);
 // push the string "hello" into ourArray
 
-
+ourArray.push("hello");
 // push the boolean false into ourArray
 
-
+ourArray.push(false);
 // push the number 84 into ourArray
 
-
+ourArray.puah(84);
 // push the string "world" into our Array
-
+ourArray.push("world");
 
 // console log ourArray
 
-
+console.log(ourArray);
 
 // This seperator is here to make your console logs a little easier to read 
 // by creating seperations between the different sections of the activity
 console.log("--------------------------Seperator 1--------------------------");
 
 // declare a variable named oneToTen and assign it an array containing the numbers from 1 to 10
-
+var oneToTen = [1,2,3,4,5,6,7,8,9,10];
 
 // console log the element at index 4
-
+console.log(oneToTen[4]);
 
 // console log the element at index 7
 
-
+console.log(oneToTen[7]);
 
 
 // This seperator is here to make your console logs a little easier to read 
